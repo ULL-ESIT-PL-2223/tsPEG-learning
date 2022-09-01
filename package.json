@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "compile": "tspeg grammar.peg parser.ts",
-    "js": "tsc -t ES2015 -m commonjs parser.ts calc.ts"
+    "js": "npm run compile && tsc parser.ts calc.ts use-parser.ts",
+    "test": "npm run js && node use-parser.js"
   },
   "keywords": [],
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^18.7.14",
     "tspeg": "^3.2.1"
   }
 }

@@ -1,2 +1,2 @@
 sum := left=num '\+' right=num
-num := '[0-9]+'
+num := '\d+'
