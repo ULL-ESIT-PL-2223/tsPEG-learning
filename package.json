@@ -1,0 +1,16 @@
+{
+  "name": "tspeg-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tspeg grammar.peg parser.ts",
+    "js": "tsc -t ES2015 -m commonjs parser.ts calc.ts"
+  },
+  "keywords": [],
+  "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "tspeg": "^3.2.1"
+  }
+}
