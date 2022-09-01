@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "tspeg grammar.peg parser.ts",
-    "js": "npm run compile && tsc parser.ts calc.ts use-parser.ts",
-    "test": "npm run js && node use-parser.js"
+    "js": "npm run compile && tsc",
+    "test": "npm run js && node dist/use-parser.js"
   },
   "keywords": [],
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
