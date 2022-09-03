@@ -2,3 +2,4 @@ node_modules
 dist
 src/lookahead-parser.ts
 src/parser.ts
+src/calc-grammar.ts

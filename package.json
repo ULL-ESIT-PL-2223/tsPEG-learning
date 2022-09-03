@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "tspeg src/grammar.peg src/parser.ts",
+    "calc": "tspeg src/calc-grammar.peg src/calc-grammar.ts",
     "lookahead": "tspeg src/lookahead.peg src/lookahead-parser.ts",
     "js": "tsc -p src",
     "use": "npm run js && node bin/use.js",
