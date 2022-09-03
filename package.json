@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "compile": "tspeg grammar.peg parser.ts",
-    "js": "npm run compile && tsc",
-    "test": "npm run js && node dist/use-parser.js"
+    "lookahead": "tspeg lookahead.peg lookahead-parser.ts",
+    "js": "tsc",
+    "test": "npm run js && node dist/use-parser.js",
+    "start": "npm run js && node dist/use-lookahead.js"
   },
   "keywords": [],
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
