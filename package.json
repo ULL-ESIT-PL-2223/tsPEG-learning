@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "tspeg grammar.peg parser.ts",
-    "lookahead": "tspeg lookahead.peg lookahead-parser.ts",
-    "js": "tsc",
-    "test": "npm run js && node dist/use-parser.js",
-    "start": "npm run js && node dist/use-lookahead.js"
+    "compile": "tspeg src/grammar.peg src/parser.ts",
+    "lookahead": "tspeg src/lookahead.peg src/lookahead-parser.ts",
+    "js": "tsc -p src",
+    "use": "npm run js && node bin/use.js",
+    "test": "npm run js && node dist/bin/use-parser.js",
+    "start": "npm run js && node dist/bin/use-lookahead.js"
   },
   "keywords": [],
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",

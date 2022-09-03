@@ -1,5 +1,5 @@
 import { inspect } from 'util'
-import { parse } from './lookahead-parser'
+import { parse } from '../lookahead-parser'
 const inputs = ['aabbcc', 'aabbc']
 
 for (let input of inputs) {
